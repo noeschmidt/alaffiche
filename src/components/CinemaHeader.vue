@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const nomSalle = ref('Salle 2')
+const nomSalle = ref('La Praille')
 const prenom = ref('Noé')
 </script>
 
