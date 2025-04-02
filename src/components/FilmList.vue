@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import FilmCard from '@/components/FilmCard.vue'
+import SelectedFilms from '@/components/SelectedFilms.vue'
 
 const props = defineProps({
   films: Array,
@@ -37,6 +38,9 @@ const filmsFiltre = computed(() => {
     </div>
 
     <div class="max-w-7xl mx-auto w-full">
+      <!-- Composant pour afficher les films sélectionnés -->
+      <SelectedFilms />
+
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <FilmCard
           v-for="(film, index) in filmsFiltre"
